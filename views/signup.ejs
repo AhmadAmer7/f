@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>sign up</title>
+     <!--  <link href="style.css" rel="stylesheet">-->
+	 <style>
+  #container-sign-up{
+    margin-top: 0;
+    padding-top: 3%;
+    text-align: center;
+}
+#sign-up{
+    width: 300px;
+    box-shadow: 0 0 4px 0 rgba(120, 120, 250, 0.5);
+    background: rgb(249, 251, 255);
+    padding: 20px;
+    margin: 4% auto 0 ;
+    text-align: center;
+}
+#or{
+    background: #fff;
+    width:30px;
+    margin: -19px auto 10px;
+}
+.input{
+    margin-bottom: 6px;
+    width: 200px;
+    height: 30px;
+}
+.sign-button{
+    color: white;
+    background-color: rgb(6, 65, 88);
+    width: 210px;
+    height: 36px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+}
+#user-icon{
+    width:70px ;
+    margin-top: 10px;
+}
+    </style>
+    </head>
+    <body>
+        <div id="container-sign-up">
+            <header id="hh">
+            </header>
+            <div>
+               <!-- <img src="images/icon.png" id="user-icon">-->
+                <h1>Sign Up</h1>
+                <form id="sign-up"method="post"autocomplete="on">
+				    <label for="email">email</label>
+                    <input type="email" id="email"name="email"class="input" tabindex="0" autocorrect="off" spellcheck="false" autocapitalize="off" value placeholder="Enter email " autocomplete="username email">
+					<label for="password">password</label>
+                    <input type="password"id="password"name="password" class="input" placeholder="Enter password">
+					<label for="name">user name</label>
+                    <input type="text" id="username"name="username"class="input"required>
+                    <label for="ph">phone</label>
+                   <input type="text" id="ph"name="ph"class="input"><br><br>
+                   <label for="gender">gender : </label>
+                   <input type="radio" id="femail"name="gender"value="femail"style="">
+                   <label for="femail"style="">femail</label>
+                   <input type="radio" id="mail"name="gender"value="mail"style="">
+                   <label for="mail"style="">mail</label><br><br>
+                    <div id="error"> </div>
+                    <input type="submit" value="Sign up">
+                    <hr> <p id="or"> Or </p>
+                    <button type="button" class="sign-button">Continue with Google</button>
+                    <button type="button" class="sign-button" >Continue with Facebook</button>
+                    <button type="button" class="sign-button">Continue with LinkedIn</button>
+                    <a class="btn btn-danger" href="/login">signin</a>
+                 
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
